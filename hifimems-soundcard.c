@@ -56,7 +56,7 @@ static struct snd_soc_dai_link snd_rpi_hifimems_soundcard_dai[] = {
 	.platform_name	= "bcm2708-i2s.0",
 	.codec_name	= "hifimems-codec",
 	.dai_fmt	= SND_SOC_DAIFMT_I2S | SND_SOC_DAIFMT_NB_NF |
-				SND_SOC_DAIFMT_CBS_CFS,
+				SND_SOC_DAIFMT_CBM_CFM,
 	.ops		= &snd_rpi_hifimems_soundcard_ops,
 	.init		= snd_rpi_hifimems_soundcard_init,
 },
