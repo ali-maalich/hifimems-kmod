@@ -66,12 +66,12 @@ static struct snd_soc_dai_driver hifimems_dai = {
                 .channels_min = 2,
                 .channels_max = 2,
                 .rates = SNDRV_PCM_RATE_48000,
-                .formats = SNDRV_PCM_FMTBIT_S32_LE},
+                .formats = SNDRV_PCM_FMTBIT_S24_LE},
     .playback = {.stream_name = "Playback",
                  .channels_min = 2,
                  .channels_max = 2,
                  .rates = SNDRV_PCM_RATE_48000,
-                 .formats = SNDRV_PCM_FMTBIT_S32_LE},
+                 .formats = SNDRV_PCM_FMTBIT_S24_LE},
     .symmetric_rates = 1};
 
 #ifdef CONFIG_OF
